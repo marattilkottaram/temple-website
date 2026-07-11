@@ -1,0 +1,61 @@
+# ============================================================
+#  Temple website — photo manager settings (Sveltia CMS)
+# ============================================================
+#
+#  BEFORE THIS WORKS, change the line below marked  <-- EDIT
+#  to your GitHub repository, e.g.  repo: arjun/sathram-temple
+#
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- EDIT (owner/repo)
+  branch: main
+
+# Where uploaded photos are stored inside the website
+media_folder: "assets/images/gallery-uploads"
+public_folder: "assets/images/gallery-uploads"
+
+# A small helpful message on the login screen
+site_url: /
+display_url: /
+logo_url: /assets/images/header-bhagavathy.png
+
+collections:
+  - name: gallery
+    label: "Photo Gallery"
+    description: "Add or remove photos shown on the website Gallery page."
+    files:
+      - name: photos
+        label: "Gallery Photos"
+        file: "assets/data/gallery.json"
+        description: "Each photo has a Section (General or Day 1–11), the image, and an optional caption."
+        fields:
+          - name: photos
+            label: "Photos"
+            label_singular: "Photo"
+            widget: list
+            summary: "{{fields.tab}} — {{fields.caption}}"
+            fields:
+              - name: tab
+                label: "Section"
+                widget: select
+                default: "general"
+                options:
+                  - { label: "General", value: "general" }
+                  - { label: "Day 1", value: "day-1" }
+                  - { label: "Day 2", value: "day-2" }
+                  - { label: "Day 3", value: "day-3" }
+                  - { label: "Day 4", value: "day-4" }
+                  - { label: "Day 5", value: "day-5" }
+                  - { label: "Day 6", value: "day-6" }
+                  - { label: "Day 7", value: "day-7" }
+                  - { label: "Day 8", value: "day-8" }
+                  - { label: "Day 9", value: "day-9" }
+                  - { label: "Day 10", value: "day-10" }
+                  - { label: "Day 11", value: "day-11" }
+              - name: image
+                label: "Photo"
+                widget: image
+              - name: caption
+                label: "Caption (optional)"
+                widget: string
+                required: false

@@ -1,0 +1,11 @@
+{
+  "photos": [
+    { "tab": "general", "image": "assets/images/general-gallery/general-1.jpg", "caption": "Committee formation and lamp lighting ceremony" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-2.jpg", "caption": "Temple community event" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-3.jpg", "caption": "Devotional gathering" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-4.jpg", "caption": "Felicitation and cultural gathering" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-5.jpg", "caption": "Spiritual discourse at auditorium" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-6.jpg", "caption": "Devotional address and programme" },
+    { "tab": "general", "image": "assets/images/general-gallery/general-7.jpg", "caption": "Guruvayoorappan decorated with flowers and lamps" }
+  ]
+}
