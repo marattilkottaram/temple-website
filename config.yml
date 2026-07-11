@@ -7,7 +7,7 @@
 #
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/YOUR-REPO-NAME   # <-- EDIT (owner/repo)
+  repo: marattilkottaram/temple-website   # <-- EDIT (owner/repo)
   branch: main
 
 # Where uploaded photos are stored inside the website
