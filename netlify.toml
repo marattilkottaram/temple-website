@@ -1,0 +1,5 @@
+# Tells Netlify: this site is ready-made, do not build it,
+# just publish the files as-is from the repository root.
+[build]
+  publish = "."
+  command = ""
