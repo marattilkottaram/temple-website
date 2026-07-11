@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Malayalam:wght@400;500;600;700;800&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap');
+:root{--cream:#fff8e7;--paper:#fffdf7;--maroon:#741d25;--deep:#461318;--gold:#d69b2b;--saffron:#efbc4b;--rose:#a33a44;--ink:#472d2a;--muted:#795f57;--line:#ead6ba}*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 5% 8%,#fff5d9 0,transparent 26%),radial-gradient(circle at 95% 20%,#f7e6c7 0,transparent 28%),linear-gradient(145deg,#fffdf8 0%,#fff8ea 48%,#f9eedc 100%);color:var(--ink);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}
+.site-header{height:88px;background:linear-gradient(90deg,#fffaf0 0%,#fff6e2 50%,#fffaf0 100%);display:flex;align-items:center;gap:34px;padding:0 max(28px,calc((100vw - 1380px)/2));position:sticky;top:0;z-index:10;border-bottom:1px solid #f0e8db}.brand{display:flex;gap:12px;align-items:center;min-width:330px}.brand strong{display:block;font-family:"Playfair Display";font-size:20px;color:var(--maroon)}.brand small{display:block;font-size:11px;font-weight:600;color:#725b54;margin-top:3px}.om{display:grid;place-items:center;width:55px;height:55px;border:2px solid var(--gold);border-radius:50%;font-size:28px;color:var(--maroon)}.brand-icon{width:55px;height:55px;object-fit:cover;border:2px solid var(--gold);border-radius:50%;display:block;flex:0 0 55px;background:#fff}nav{display:flex;align-items:center;justify-content:flex-end;gap:27px;flex:1;font-size:14px;font-weight:700}nav a{padding:8px 0}nav a.active{color:#bd5b13}.contact-link{background:var(--maroon);color:#fff!important;padding:13px 19px!important;border-radius:7px}.nav-toggle{display:none}
+.hero{min-height:790px;position:relative;display:grid;place-items:center;background:url("images/hero-banner.png") center/cover no-repeat;color:#fff;text-align:center;isolation:isolate}.hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(44,16,13,.64),rgba(97,24,23,.42),rgba(44,16,13,.58));z-index:-1}.hero-content{padding:52px 20px 46px;max-width:960px}.eyebrow{letter-spacing:1.5px;font-weight:800;color:#ffd56d;font-size:15px;margin:0 0 8px}.eyebrow.dark{color:#9f4e17}.hero h1{font-family:"Playfair Display";font-size:clamp(58px,7.2vw,108px);line-height:.91;margin:0;text-shadow:0 4px 15px #3e1010}.hero h1 em{font-style:normal;color:#ffd477}.date-pill{margin:17px auto 16px;padding:11px 21px;width:max-content;border:1px solid #f1be72;border-radius:30px;background:#762927dc;font-weight:800}.hero h2{font-family:"Playfair Display";font-size:25px;margin:0 0 6px}.location{font-weight:700;font-size:13px;margin:0}.countdown{width:min(680px,100%);margin:23px auto 18px;background:#55151ae8;border:1px solid #c99c6e;border-radius:15px;padding:13px 25px 15px;box-shadow:0 12px 30px #22050666}.countdown>p{margin:0 0 11px;font-size:12px;font-weight:800;letter-spacing:1px;color:#f9d991}.countdown>small{font-size:12px}.countdown #countdown{display:flex;justify-content:space-around;margin-bottom:9px}.countdown #countdown>div{width:25%;border-right:1px solid #b87d72}.countdown #countdown>div:last-child{border:0}.countdown b{display:block;font:700 38px "Playfair Display"}.countdown span{font-size:10px;font-weight:800;color:#f3dcc1}.cta-row{display:flex;justify-content:center;gap:13px;flex-wrap:wrap}.btn{display:inline-block;border-radius:7px;padding:15px 20px;font-weight:800;font-size:14px}.primary{background:var(--gold);color:#fff;box-shadow:0 5px 15px #3f1d1757}.outline{border:1px solid #fff;color:#fff;background:#48161996}
+.section{max-width:1200px;margin:auto;padding:72px 25px}.page h1{font:700 clamp(36px,4vw,54px) "Playfair Display";margin:0 0 16px;color:var(--deep)}.lead{color:var(--muted);margin-top:0;max-width:760px}.intro{display:grid;grid-template-columns:1.1fr .9fr;gap:58px;align-items:center}.intro h2{font:700 44px "Playfair Display";margin:0 0 14px;color:var(--deep)}.intro p{line-height:1.75;color:var(--muted)}.intro img{width:100%;height:300px;object-fit:cover;border-radius:16px;box-shadow:0 12px 28px #56352e24}footer{text-align:center;padding:23px;background:#4b1517;color:#f8dec1;font-size:13px}.whatsapp{position:fixed;right:22px;bottom:21px;background:#24cb61;color:#fff;border-radius:30px;padding:13px 18px;z-index:20;font-weight:800;box-shadow:0 6px 20px #0004}.whatsapp:first-letter{font-size:21px}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;margin-top:28px}.about-grid img{width:100%;height:320px;object-fit:cover;border-radius:15px}.about-grid p{line-height:1.8;color:var(--muted)}.feature-grid{display:grid;grid-template-columns:repeat(4,1fr);margin-top:35px;border:1px solid var(--line);border-radius:13px;overflow:hidden}.feature-grid article{padding:26px 18px;border-right:1px solid var(--line);text-align:center}.feature-grid article:last-child{border:0}.feature-grid b,.feature-grid span{display:block}.feature-grid b{color:var(--maroon);margin-bottom:9px}.feature-grid span{font-size:13px;color:var(--muted);line-height:1.45}
+.schedule-layout{display:grid;grid-template-columns:330px 1fr;gap:26px;margin-top:30px}.calendar-card,.program-card,.contact-card,.qr-card{border:1px solid var(--line);border-radius:15px;background:#fffdf9;box-shadow:0 7px 22px #48261e0a}.calendar-card{padding:20px}.cal-head{display:flex;align-items:center;justify-content:space-between;font-family:"Playfair Display";font-size:19px}.cal-head button{border:0;background:none;font-size:28px;color:var(--maroon);cursor:pointer}.weekdays{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;font-size:10px;font-weight:700;text-transform:uppercase;text-align:center;color:#7b615c;margin:20px 0 7px}.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}.calendar button{border:0;background:transparent;border-radius:50%;aspect-ratio:1;cursor:pointer;color:var(--ink);font-size:13px}.calendar button.blank{pointer-events:none}.calendar button.festival{background:var(--maroon);color:#fff;font-weight:800}.calendar button.selected{outline:3px solid var(--gold);outline-offset:2px}.calendar-note{text-align:center;border:1px solid var(--line);border-radius:9px;padding:13px;margin:21px 0 0;font-size:12px;color:var(--muted)}.program-card{overflow:hidden}.program-title{padding:22px 25px;background:#fff8ed;border-bottom:1px solid var(--line)}.program-title p{font-size:11px;color:var(--maroon);font-weight:800;letter-spacing:1px;margin:0 0 5px}.program-title h2{font:700 26px "Playfair Display";margin:0}.program-list{padding:20px 25px}.timeline-row{display:grid;grid-template-columns:155px 1fr;border-bottom:1px solid #eee4d9;padding:12px 0;font-size:14px}.timeline-row time{font-weight:700;color:var(--maroon)}.notice{margin:0 25px 22px;padding:11px 13px;background:#fff6e7;border:1px solid #f0dfc5;border-radius:7px;font-size:12px;color:#785f52}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin:25px 0}.filters button{border:1px solid #eadccf;background:#fff;color:var(--ink);padding:8px 13px;border-radius:7px;font-weight:700;font-size:12px;cursor:pointer}.filters button.active{background:var(--maroon);color:#fff}.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.gallery-item{padding:0;border:0;background:none;cursor:pointer;text-align:left}.gallery-item img{width:100%;height:190px;object-fit:cover;border-radius:10px;display:block;transition:transform .2s}.gallery-item:hover img{transform:translateY(-3px)}.gallery-item span{display:block;font-size:12px;color:var(--muted);padding-top:7px}dialog{border:0;border-radius:15px;max-width:min(800px,92vw);padding:15px;background:#251112;color:#fff}dialog::backdrop{background:#000a}dialog img{display:block;max-width:100%;max-height:72vh;border-radius:9px}dialog button{float:right;border:0;border-radius:50%;background:#fff;color:#501417;font-size:22px;width:32px;height:32px;cursor:pointer}
+.donation-layout{display:grid;grid-template-columns:1fr 380px;gap:55px;margin-top:28px;align-items:center}.donation-layout p{line-height:1.8;color:var(--muted)}.causes{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin:23px 0}.causes span{padding:14px;border:1px solid var(--line);border-radius:9px;background:#fffaf2;font-weight:700}.qr-card{text-align:center;padding:27px}.qr-card img{width:240px;max-width:100%;display:block;margin:0 auto 16px}.qr-card b,.qr-card code{display:block}.qr-card code{font-size:12px;background:#fff5db;padding:8px;margin-top:11px}.replace-note{font-size:13px;background:#fff4e3;padding:15px;border-left:4px solid var(--gold)}.contact-grid{display:grid;grid-template-columns:1fr 1.25fr;gap:30px;margin-top:28px}.contact-card{padding:28px}.contact-card h2{font:700 25px "Playfair Display";margin-top:0}.contact-card p{line-height:1.75}.contact-card a:not(.btn){color:var(--maroon);font-weight:700}.map-placeholder{display:grid;place-items:center;align-content:center;min-height:320px;border-radius:14px;background:linear-gradient(135deg,#d5e7df,#a8c8bd);color:#3c6558}.map-placeholder span{font:700 28px "Playfair Display"}.map-placeholder small{margin-top:10px}
+@media(max-width:900px){.site-header{height:auto;padding:13px 20px;flex-wrap:wrap}.brand{min-width:0}.brand strong{font-size:16px}.nav-toggle{display:block;margin-left:auto;border:0;background:none;font-size:25px;color:var(--maroon)}nav{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0}nav.open{display:flex}nav a{padding:12px}.hero{min-height:760px}.intro,.about-grid,.schedule-layout,.donation-layout,.contact-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:repeat(2,1fr)}.feature-grid article:nth-child(2){border-right:0}.gallery-grid{grid-template-columns:repeat(2,1fr)}.schedule-layout{gap:20px}.calendar-card{max-width:400px}.donation-layout{gap:20px}}@media(max-width:520px){.om{width:43px;height:43px;font-size:22px}.brand-icon{width:43px;height:43px;flex-basis:43px}.brand small{font-size:9px}.hero h1{font-size:54px}.hero h2{font-size:20px}.countdown{padding-left:8px;padding-right:8px}.countdown b{font-size:28px}.countdown span{font-size:8px}.feature-grid{grid-template-columns:1fr}.feature-grid article{border-right:0;border-bottom:1px solid var(--line)}.gallery-grid{gap:10px}.gallery-item img{height:140px}.timeline-row{grid-template-columns:1fr;gap:4px}.causes{grid-template-columns:1fr}.whatsapp span{display:none}.whatsapp{right:15px;bottom:15px;padding:13px}}
+
+/* Home-page highlight sections */
+.quick-links{display:grid;grid-template-columns:1fr 1fr 1.9fr;gap:18px;padding-top:54px;padding-bottom:68px}.quick-card{border:1px solid #ead7ba;border-radius:14px;background:#fffdf8;padding:20px 18px;min-height:235px;box-shadow:0 5px 18px #633b1a0b}.quick-icon{display:inline-grid;place-items:center;width:31px;height:31px;border-radius:8px;background:#fff0d8;color:#a84b10;font-weight:800;margin-bottom:9px}.quick-card h3{font:700 20px "Playfair Display";color:var(--maroon);margin:0 0 9px}.quick-card p{font-size:13px;line-height:1.5;color:#765d55;margin:0 0 16px}.quick-card>a:not(.view-all){font-weight:800;font-size:13px;color:var(--maroon)}.mini-btn{display:inline-block;background:var(--maroon);color:#fff!important;border-radius:5px;padding:11px 15px!important;font-size:13px!important;font-weight:800!important}.gallery-highlight{padding:18px 18px}.card-heading{display:flex;justify-content:space-between;align-items:flex-start}.card-heading>div{display:flex;gap:11px;align-items:center}.card-heading .quick-icon{margin:0}.card-heading h3{margin:0}.view-all{border:1px solid #e7ceb0;border-radius:20px;padding:6px 12px;font-size:11px;color:var(--maroon)}.mini-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}.mini-gallery img{width:100%;height:94px;border-radius:5px;object-fit:cover}.gallery-highlight p{margin-top:11px;font-size:12px}.devotion-strip{background:#fff0d3;padding:70px 0}.devotion-grid{display:grid;grid-template-columns:.95fr 1.2fr;gap:55px;align-items:center;padding-top:0;padding-bottom:0}.devotion-grid h2,.recent-section h2{font:700 45px "Playfair Display";line-height:1.07;margin:8px 0 13px;color:var(--maroon)}.devotion-grid>div>p:not(.eyebrow){font-size:15px;line-height:1.55;color:#755e56;max-width:430px}.devotion-features{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.devotion-features article{background:#fffdfa;border-left:3px solid var(--gold);padding:22px 17px;min-height:102px}.devotion-features span{color:#af580f;font-size:20px}.devotion-features h3{font:700 17px "Playfair Display";color:var(--maroon);margin:9px 0 2px}.devotion-features p{font-size:12px;color:#846b61;margin:0}.recent-section{padding-top:70px;padding-bottom:70px}.section-heading{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:24px}.section-heading h2{margin-bottom:0}.recent-grid{display:grid;grid-template-columns:1.25fr repeat(3,1fr);gap:10px}.recent-grid a{height:285px;position:relative;overflow:hidden;border-radius:9px;background:#4b1417}.recent-grid a:first-child{height:320px}.recent-grid img{width:100%;height:100%;object-fit:cover;display:block}.recent-grid a:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#2d090ccf)}.recent-grid span{position:absolute;z-index:1;bottom:0;left:0;right:0;padding:16px;color:#fff}.recent-grid b{display:block;font:700 15px "Playfair Display"}.recent-grid small{display:block;margin-top:4px;font-size:10px;color:#f6e5ce}@media(max-width:900px){.quick-links{grid-template-columns:1fr 1fr}.gallery-highlight{grid-column:1/-1}.devotion-grid{grid-template-columns:1fr}.recent-grid{grid-template-columns:repeat(2,1fr)}.recent-grid a,.recent-grid a:first-child{height:245px}}@media(max-width:540px){.quick-links{grid-template-columns:1fr}.gallery-highlight{grid-column:auto}.devotion-grid h2,.recent-section h2{font-size:35px}.devotion-features{grid-template-columns:1fr}.recent-grid{grid-template-columns:1fr}.recent-grid a,.recent-grid a:first-child{height:270px}.section-heading{align-items:start;flex-direction:column}.mini-gallery img{height:80px}}
+
+.deity-section{margin-top:28px}.deity-figure{margin:0;background:#fffaf2;border:1px solid var(--line);border-radius:15px;padding:18px;box-shadow:0 7px 22px #48261e0a}.deity-figure img{width:100%;height:auto;max-height:620px;object-fit:contain;background:#fff;border-radius:12px}.deity-figure figcaption{text-align:center;margin-top:12px;font-weight:700;color:var(--maroon);font-family:"Playfair Display";font-size:22px}.info-card{padding:8px 0}.info-card h2{font:700 34px "Playfair Display";margin:0 0 14px;color:var(--deep)}.info-card p{line-height:1.8;color:var(--muted)}
+
+.page-header-image{max-width:1200px;margin:18px auto 0;padding:0 25px}.page-header-image img{display:block;width:100%;height:180px;object-fit:cover;object-position:center;border-radius:18px;box-shadow:0 10px 28px #48261e18;border:1px solid var(--line)}@media(max-width:900px){.page-header-image img{height:130px;border-radius:14px}}
+
+/* Devotional palette and reliable calendar layout */
+.hero{background-blend-mode:normal;box-shadow:inset 0 -120px 80px rgba(83,19,21,.2)}
+.hero-overlay{background:linear-gradient(90deg,rgba(62,13,18,.7),rgba(129,40,34,.45) 50%,rgba(89,26,19,.64))}
+.section{position:relative}.section:before{content:"";position:absolute;inset:0 auto auto 0;width:110px;height:110px;background:radial-gradient(circle,rgba(214,155,43,.15),transparent 67%);pointer-events:none}
+.quick-card,.calendar-card,.program-card,.contact-card,.qr-card,.deity-figure{background:linear-gradient(155deg,rgba(255,255,255,.97),rgba(255,248,232,.94));border-color:#ebcf9e}
+.devotion-strip{background:linear-gradient(125deg,#fff3d4 0%,#f7e3bb 47%,#fff7e6 100%);border-top:1px solid #f0d49e;border-bottom:1px solid #f0d49e}
+.weekdays{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:6px!important;align-items:center;text-align:center;white-space:normal!important}
+.weekdays span{display:block!important;min-width:0!important;font-size:10px;line-height:1.2}
+.calendar{display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:7px!important;align-items:center}
+.calendar button{display:grid!important;place-items:center;min-width:0!important;width:100%!important;aspect-ratio:1/1!important}
+.calendar-card{min-width:0}.calendar-note{background:linear-gradient(135deg,#fff9eb,#fff2d7)}
+.page-header-image img{box-shadow:0 12px 28px rgba(103,40,22,.18);border-color:#e6c989}
+
+.hero-title-single{font-family:"Playfair Display";font-size:clamp(34px,4.6vw,64px)!important;line-height:1.08!important;white-space:nowrap;letter-spacing:-.7px;color:#fff5dd;text-shadow:0 4px 15px #3e1010}.hero-title-single em{font-style:normal}@media(max-width:800px){.hero-title-single{white-space:normal;font-size:clamp(30px,7vw,48px)!important;padding:0 8px}}
+
+
+.hero-edition{margin:0 0 10px;font-family:"Playfair Display",serif;font-size:clamp(34px,4vw,58px);font-weight:800;letter-spacing:.14em;color:#ffe2a3;text-transform:uppercase;text-shadow:0 3px 12px #3a0e0e}.hero-title-caps{font-family:"Playfair Display",serif!important;font-size:clamp(28px,4.1vw,56px)!important;line-height:1.15!important;letter-spacing:.08em;text-transform:uppercase;max-width:980px;margin:0 auto;text-shadow:0 4px 15px #3e1010;color:#fff7e4}.hero .eyebrow{display:none}@media(max-width:520px){.hero-edition{font-size:30px;letter-spacing:.11em}.hero-title-caps{font-size:24px!important;line-height:1.22!important}}
+
+.malayalam-title{letter-spacing:.01em!important;line-height:1.18!important;font-size:clamp(30px,4.3vw,62px)!important;font-weight:800!important}
+@media(max-width:520px){.malayalam-title{font-size:26px!important;line-height:1.25!important}}
+
+.hero-edition sup{font-size:.48em;vertical-align:super;line-height:0;text-transform:lowercase;letter-spacing:.04em}
+
+.festival-details{margin:34px 0 6px;padding:30px 34px;border-radius:16px;border:1px solid var(--line);background:linear-gradient(135deg,#fff7e8,#fffdf8);box-shadow:0 7px 22px #48261e0a}.festival-details h2{font:700 32px "Playfair Display";color:var(--deep);margin:5px 0 14px}.festival-details p{color:var(--muted);line-height:1.8;margin:10px 0}.festival-details strong{color:var(--maroon)}@media(max-width:520px){.festival-details{padding:22px 18px}.festival-details h2{font-size:26px}}
+
+.map-embed{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:#fff;box-shadow:0 7px 22px #48261e0a}.map-embed iframe{display:block;width:100%;min-height:320px}.map-embed a{display:block;padding:12px 16px;background:#fffaf2;color:var(--maroon);font-weight:800;font-size:13px;text-align:center}
+
+.quick-card:first-child{min-height:300px}.quick-card:first-child p{font-size:12.5px;line-height:1.48}
+@media(max-width:900px){.quick-card:first-child{min-height:0}}
+
+.about-mahasathram-card{min-height:300px}.about-mahasathram-card .card-kicker{font-size:11px!important;font-weight:800!important;letter-spacing:1.2px;color:#a64f13;margin:0 0 8px}.about-mahasathram-card h4{font:700 20px/1.2 "Playfair Display";color:var(--maroon);margin:0 0 12px}.about-mahasathram-card p{line-height:1.55}
+
+
+.about-highlight-section{display:grid;grid-template-columns:1.02fr .98fr;gap:28px;align-items:stretch;padding-top:54px;padding-bottom:68px}.single-about-card{min-height:0;padding:28px 30px}.single-about-card .card-kicker{font-size:12px;font-weight:800;letter-spacing:.18em;color:#af5a13;text-transform:uppercase;margin:8px 0 10px}.single-about-card h3{font:700 clamp(28px,3vw,48px) "Playfair Display";color:var(--maroon);margin:0 0 12px}.single-about-card h4{font:700 clamp(22px,2.5vw,38px) "Playfair Display";line-height:1.12;color:#5a1017;margin:0 0 18px}.single-about-card p{font-size:16px;line-height:1.75;color:#755e56;max-width:760px}.single-about-card a{font-size:14px;font-weight:800;color:var(--maroon)}.mahasathram-image-card{border:1px solid #ead7ba;border-radius:16px;overflow:hidden;background:linear-gradient(155deg,rgba(255,255,255,.97),rgba(255,248,232,.94));box-shadow:0 5px 18px #633b1a0b;display:flex;align-items:stretch}.mahasathram-image-card img{width:100%;height:100%;min-height:360px;object-fit:cover;display:block}.about-mahasathram-card .quick-icon{margin-bottom:12px}
+@media(max-width:900px){.about-highlight-section{grid-template-columns:1fr}.mahasathram-image-card img{min-height:280px}}
+@media(max-width:540px){.single-about-card{padding:22px 18px}.single-about-card h4{font-size:32px}.single-about-card p{font-size:15px}.mahasathram-image-card img{min-height:220px}}
+
+/* Larger About Mahasathram text */
+.single-about-card h3{font-size:clamp(34px,3.5vw,54px)}.single-about-card h4{font-size:clamp(26px,2.8vw,42px)}.single-about-card p{font-size:18px;line-height:1.78}.single-about-card .card-kicker{font-size:13px}
+@media(max-width:540px){.single-about-card h3{font-size:34px}.single-about-card h4{font-size:30px}.single-about-card p{font-size:16px}}
+
+
+@media(max-width:760px){.page-photo-row,.home-photo-note{grid-template-columns:1fr}.page-photo-row img{height:220px}.gallery-banner-photo{height:180px}.home-photo-note{gap:22px}.home-photo-note img{height:230px}}
+
+
+/* Final visual theme: warm devotional cream, saffron and temple maroon */
+:root{--cream:#fff8ec;--paper:#fffdf8;--maroon:#6b1620;--deep:#421017;--gold:#d39b2a;--saffron:#f4c35e;--ink:#432a2b;--muted:#795f58;--line:#ebcf9d}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;background:linear-gradient(150deg,#fffdf8 0%,#fff5df 53%,#f9ecd5 100%)!important;color:var(--ink)}
+.site-header{background:linear-gradient(90deg,#fffaf0 0%,#fff2d4 52%,#fffaf0 100%)!important}
+.brand strong,.page h1,.single-about-card h3,.single-about-card h4,.devotion-grid h2,.recent-section h2,.info-card h2,.festival-details h2,.program-title h2,.quick-card h3,.contact-card h2{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;font-weight:800!important;letter-spacing:-.025em}
+.hero-edition,.hero-title-caps,.countdown b{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important}
+.hero-title-caps{font-weight:800!important;letter-spacing:.025em!important}
+.hero{background-position:center!important}.hero-overlay{background:linear-gradient(90deg,rgba(74,12,18,.68),rgba(116,31,28,.39) 50%,rgba(72,15,20,.62))!important}
+.quick-card,.mahasathram-image-card,.calendar-card,.program-card,.contact-card,.qr-card,.deity-figure{background:linear-gradient(150deg,#fffefa 0%,#fff6e7 100%)!important;border-color:#ebca93!important;box-shadow:0 12px 30px rgba(112,48,25,.10)!important}
+.btn.primary,.mini-btn{background:linear-gradient(135deg,#d99723,#b76416)!important}.contact-link{background:linear-gradient(135deg,#7c1c25,#591017)!important}
+.page-header-image img,.gallery-banner-photo{border-color:#ebca93!important}
+.gallery-page .lead{font-size:18px;line-height:1.6;max-width:840px}.gallery-page .filters{margin:28px 0}.gallery-page .filters button{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;background:#fffdf7;border-color:#e8c98e}.gallery-page .filters button.active{background:var(--maroon)!important}
+.gallery-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important}.gallery-item{border:1px solid #ecd1a0!important;border-radius:13px!important;padding:8px!important;background:#fffdf8!important;box-shadow:0 8px 20px rgba(86,34,21,.07)}.gallery-item img{height:205px!important;border-radius:8px!important}.gallery-item span{font-weight:700!important;color:var(--maroon)!important;padding:10px 4px 3px!important;font-size:13px!important}
+@media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.gallery-item img{height:190px!important}}
+@media(max-width:540px){body{font-family:Helvetica,Arial,sans-serif!important}.gallery-grid{grid-template-columns:1fr!important}.gallery-item img{height:240px!important}.gallery-page .lead{font-size:16px}}
+
+/* Updated premium peacock-blue & gold theme */
+:root{--cream:#f7f5ee;--paper:#fffefb;--maroon:#075d67;--deep:#073b45;--gold:#c69a3f;--saffron:#e5c26f;--rose:#1b7d84;--ink:#18383d;--muted:#5f7274;--line:#cbded8}
+body{background:radial-gradient(circle at 92% 4%,#d9efeb 0,transparent 25%),radial-gradient(circle at 6% 18%,#fff0cf 0,transparent 24%),linear-gradient(145deg,#fcfffd 0%,#f2f8f5 50%,#eef5f2 100%)!important;color:var(--ink)!important}
+.site-header{background:linear-gradient(90deg,#fafffd 0%,#eef8f5 50%,#fbfdf8 100%)!important;border-bottom-color:#c9ddd7!important}.brand strong{color:#075d67!important}.brand small{color:#52757a!important}.brand-icon{border-color:#c69a3f!important}nav a.active{color:#075d67!important}.contact-link{background:linear-gradient(135deg,#087480,#044b58)!important}
+.hero-overlay{background:linear-gradient(90deg,rgba(4,53,61,.76),rgba(14,104,106,.44) 50%,rgba(4,48,57,.65))!important}.hero{box-shadow:inset 0 -130px 80px rgba(2,45,51,.25)!important}.hero-edition{color:#f6dc9a!important}.hero-title-caps{color:#f7fff9!important;text-shadow:0 4px 15px rgba(0,44,50,.7)!important}.date-pill{background:#075d67dc!important;border-color:#e5c26f!important}.countdown{background:#063f49e8!important;border-color:#c69a3f!important}.countdown>p{color:#f6dc9a!important}.countdown #countdown>div{border-color:#72aeb0!important}.countdown span{color:#d9f0e7!important}.primary,.mini-btn{background:linear-gradient(135deg,#d5af54,#b27c2b)!important;color:#123a3e!important}.outline{background:#064a55a0!important}
+.eyebrow.dark,.card-kicker{color:#a66e18!important}.section:before{background:radial-gradient(circle,rgba(13,122,125,.13),transparent 67%)!important}.quick-card,.mahasathram-image-card,.calendar-card,.program-card,.contact-card,.qr-card,.deity-figure{background:linear-gradient(150deg,#ffffff 0%,#f0faf6 100%)!important;border-color:#bed9d1!important;box-shadow:0 12px 30px rgba(10,85,87,.10)!important}.single-about-card h3,.single-about-card h4,.page h1,.info-card h2,.festival-details h2,.contact-card h2,.program-title h2{color:#073b45!important}.single-about-card p,.about-grid p,.festival-details p,.lead{color:#5a7172!important}
+.devotion-strip{background:linear-gradient(125deg,#07535b 0%,#0a7678 50%,#07535b 100%)!important;border-color:#b4d9d2!important}.devotion-grid h2{color:#f9fff9!important}.devotion-grid>div>p:not(.eyebrow){color:#d7efea!important}.devotion-features article{background:#ffffffea!important;border-left-color:#d2a447!important}.devotion-features h3{color:#07535b!important}.devotion-features p{color:#5e7676!important}
+.recent-section{background:linear-gradient(145deg,#f4fbf8,#eaf5f1)!important}.recent-section h2{color:#073b45!important}.recent-grid a:after{background:linear-gradient(transparent,rgba(3,54,61,.9))!important}.recent-grid small{color:#e6f3e9!important}.filters button.active{background:#075d67!important}.gallery-item{border-color:#bfd8d2!important;background:#fffefb!important}.gallery-item span{color:#075d67!important}.calendar button.festival{background:#075d67!important}.calendar button.selected{outline-color:#d5af54!important}.cal-head button,.timeline-row time,.contact-card a:not(.btn){color:#075d67!important}.program-title{background:linear-gradient(135deg,#e7f4ef,#f9fdf9)!important}.calendar-note{background:linear-gradient(135deg,#f4fbf8,#e7f3ed)!important}.causes span{background:#eef8f4!important}.replace-note{background:#e7f6f1!important;border-left-color:#d5af54!important}.map-embed a{background:#eef8f4!important;color:#075d67!important}footer{background:linear-gradient(135deg,#063d48,#075d67)!important;color:#e7f5ee!important}
+/* Equal-size homepage gallery cards */
+.recent-grid{grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:16px!important;align-items:stretch!important}
+.recent-grid a,.recent-grid a:first-child{height:300px!important;min-height:300px!important;width:100%!important;border-radius:12px!important}
+.recent-grid img{width:100%!important;height:100%!important;object-fit:cover!important;object-position:center!important}
+@media(max-width:900px){.recent-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}.recent-grid a,.recent-grid a:first-child{height:260px!important;min-height:260px!important}}
+@media(max-width:540px){.recent-grid{grid-template-columns:1fr!important}.recent-grid a,.recent-grid a:first-child{height:270px!important;min-height:270px!important}}
+
+
+/* Premium all-caps heading system */
+:root{--heading-font:"Helvetica Neue",Helvetica,Arial,sans-serif}
+h1,h2,h3,h4,.page h1,.single-about-card h3,.single-about-card h4,.devotion-grid h2,.recent-section h2,.info-card h2,.festival-details h2,.program-title h2,.quick-card h3,.contact-card h2,.section-heading h2{
+  font-family:var(--heading-font)!important;
+  font-weight:800!important;
+  text-transform:uppercase!important;
+  letter-spacing:.055em!important;
+  line-height:1.14!important;
+}
+.page h1{font-size:clamp(34px,4.2vw,58px)!important}
+.single-about-card h3{font-size:clamp(25px,2.7vw,40px)!important}
+.single-about-card h4{font-size:clamp(23px,2.4vw,35px)!important}
+.devotion-grid h2,.recent-section h2{font-size:clamp(31px,3.7vw,52px)!important}
+.info-card h2,.festival-details h2,.contact-card h2{font-size:clamp(26px,3vw,38px)!important}
+.program-title h2{font-size:clamp(23px,2.7vw,32px)!important}
+.feature-grid b,.devotion-features h3,.gallery-item span,.recent-grid b{font-family:var(--heading-font)!important;font-weight:800!important;letter-spacing:.025em}
+/* Keep Malayalam hero title natural and readable */
+.hero-title-caps,.malayalam-title{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif!important;text-transform:none!important;letter-spacing:.01em!important}
+@media(max-width:540px){
+  h1,h2,h3,h4,.page h1,.single-about-card h3,.single-about-card h4,.devotion-grid h2,.recent-section h2,.info-card h2,.festival-details h2,.program-title h2,.quick-card h3,.contact-card h2,.section-heading h2{letter-spacing:.035em!important}
+}
+/* Reduced caps heading sizes */
+h1,h2,h3,h4,.page h1,.single-about-card h3,.single-about-card h4,.devotion-grid h2,.recent-section h2,.info-card h2,.festival-details h2,.program-title h2,.quick-card h3,.contact-card h2,.section-heading h2{
+  line-height:1.12!important;
+}
+.page h1{font-size:clamp(28px,3.3vw,46px)!important}
+.single-about-card h3{font-size:clamp(21px,2.2vw,31px)!important}
+.single-about-card h4{font-size:clamp(24px,2.7vw,36px)!important}
+.devotion-grid h2,.recent-section h2,.section-heading h2{font-size:clamp(27px,3vw,42px)!important}
+.info-card h2,.festival-details h2,.contact-card h2{font-size:clamp(22px,2.4vw,31px)!important}
+.program-title h2{font-size:clamp(20px,2.2vw,28px)!important}
+.quick-card h3{font-size:18px!important}
+.feature-grid b,.devotion-features h3,.recent-grid b{font-size:14px!important}
+@media(max-width:540px){
+  .page h1{font-size:30px!important}
+  .single-about-card h4{font-size:27px!important}
+  .devotion-grid h2,.recent-section h2{font-size:30px!important}
+}
+
+/* English / Malayalam selector */
+.language-switcher{display:flex;align-items:center;gap:4px;margin-left:10px}.lang-btn{border:1px solid rgba(176,126,42,.55);background:#fffaf0;color:#704929;border-radius:999px;min-width:33px;height:28px;padding:0 8px;font:800 10px Helvetica,Arial,sans-serif;cursor:pointer}.lang-btn.active{background:var(--maroon);color:#fff;border-color:var(--maroon)}.lang-ml{font-family:"Noto Sans Malayalam","Nirmala UI",Arial,sans-serif}.lang-ml h1,.lang-ml h2,.lang-ml h3,.lang-ml h4,.lang-ml .hero-title-caps{font-family:"Noto Sans Malayalam","Nirmala UI",Arial,sans-serif!important;letter-spacing:0!important;line-height:1.35!important}.lang-ml .hero-title-caps{font-size:clamp(28px,4vw,58px)!important}.lang-ml .single-about-card h4{font-size:clamp(25px,3vw,44px)!important}.lang-ml .devotion-grid h2,.lang-ml .recent-section h2{font-size:clamp(30px,3.5vw,50px)!important}.lang-ml .nav-toggle{font-family:Arial,sans-serif}@media(max-width:900px){.language-switcher{margin-left:auto;margin-right:10px}.site-header{gap:12px}}@media(max-width:540px){.language-switcher{order:2;margin-left:auto}.lang-btn{min-width:30px;height:26px;padding:0 6px}}
+
+.lang-ml{font-family:Arial,"Noto Sans Malayalam",sans-serif}.lang-ml h1,.lang-ml h2,.lang-ml h3,.lang-ml h4{letter-spacing:0!important;line-height:1.35!important}.lang-ml .brand strong{font-family:Arial,"Noto Sans Malayalam",sans-serif}
+
+.qr-card .upi-name{display:block;margin-top:8px;font-weight:700;color:var(--muted);font-size:12px;letter-spacing:.02em}.qr-card code{word-break:break-word}
+
+
+/* Final heading update: Calibre-style, smaller premium headings across all pages */
+:root{--heading-font:Calibre,"Helvetica Neue",Helvetica,Arial,sans-serif;}
+body{font-family:Calibre,"Helvetica Neue",Helvetica,Arial,sans-serif!important;}
+.brand strong,
+.page h1,
+.hero-title-caps,
+.single-about-card h3,
+.single-about-card h4,
+.devotion-grid h2,
+.recent-section h2,
+.section-heading h2,
+.info-card h2,
+.festival-details h2,
+.program-title h2,
+.quick-card h3,
+.contact-card h2,
+.donation-layout h1,
+.donation-layout h2,
+.gallery-page h1,
+.feature-grid b,
+.devotion-features h3,
+.recent-grid b{
+  font-family:var(--heading-font)!important;
+  text-transform:uppercase!important;
+  font-weight:800!important;
+  letter-spacing:.045em!important;
+  line-height:1.12!important;
+}
+.page h1,
+.gallery-page h1{font-size:clamp(24px,2.7vw,38px)!important;}
+.single-about-card h3{font-size:clamp(18px,1.8vw,26px)!important;}
+.single-about-card h4{font-size:clamp(20px,2.15vw,30px)!important;}
+.devotion-grid h2,
+.recent-section h2,
+.section-heading h2{font-size:clamp(24px,2.6vw,36px)!important;}
+.info-card h2,
+.festival-details h2,
+.contact-card h2,
+.donation-layout h2{font-size:clamp(20px,2.1vw,28px)!important;}
+.program-title h2{font-size:clamp(18px,1.9vw,24px)!important;}
+.quick-card h3{font-size:17px!important;}
+.feature-grid b,
+.devotion-features h3,
+.recent-grid b{font-size:13px!important;letter-spacing:.035em!important;}
+.brand strong{font-size:18px!important;line-height:1.05!important;}
+.hero-title-caps{font-size:clamp(28px,4vw,54px)!important;letter-spacing:.025em!important;text-transform:none!important;}
+.lang-ml .brand strong,
+.lang-ml .page h1,
+.lang-ml .hero-title-caps,
+.lang-ml .single-about-card h3,
+.lang-ml .single-about-card h4,
+.lang-ml .devotion-grid h2,
+.lang-ml .recent-section h2,
+.lang-ml .section-heading h2,
+.lang-ml .info-card h2,
+.lang-ml .festival-details h2,
+.lang-ml .program-title h2,
+.lang-ml .quick-card h3,
+.lang-ml .contact-card h2{
+  font-family:"Noto Sans Malayalam","Nirmala UI",Calibre,"Helvetica Neue",Arial,sans-serif!important;
+  letter-spacing:0!important;
+  line-height:1.35!important;
+}
+.lang-ml .page h1{font-size:clamp(23px,2.8vw,36px)!important;}
+.lang-ml .hero-title-caps{font-size:clamp(24px,3.6vw,46px)!important;}
+.lang-ml .single-about-card h4{font-size:clamp(20px,2.4vw,31px)!important;}
+.lang-ml .devotion-grid h2,.lang-ml .recent-section h2{font-size:clamp(23px,2.7vw,36px)!important;}
+@media(max-width:540px){
+  .page h1,.gallery-page h1{font-size:26px!important;}
+  .single-about-card h4{font-size:24px!important;}
+  .devotion-grid h2,.recent-section h2,.section-heading h2{font-size:26px!important;}
+  .hero-title-caps{font-size:30px!important;}
+  .brand strong{font-size:15px!important;}
+}
+
+
+/* Home hero deity blend update */
+.hero{min-height:860px!important;position:relative;overflow:hidden!important;background-position:center center!important}
+.hero-content{position:relative;z-index:2!important;max-width:860px!important;padding-top:72px!important;padding-bottom:70px!important}
+.hero-deity-collage{position:absolute;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.hero-deity{position:absolute;display:block;object-fit:contain;filter:drop-shadow(0 16px 30px rgba(0,0,0,.28))}
+.hero-krishna{left:2.5%;bottom:0;width:min(28vw,360px);max-height:78%;opacity:.96}
+.hero-bhagavathy{right:3.5%;bottom:3%;width:min(23vw,300px);max-height:66%;padding:10px;border-radius:26px;background:rgba(255,247,236,.12);backdrop-filter:blur(2px);box-shadow:0 20px 40px rgba(4,43,47,.24);border:1px solid rgba(255,238,208,.34)}
+.hero-poornathreyeesan{right:25%;bottom:6%;width:min(15vw,180px);max-height:43%;padding:8px;border-radius:22px;background:rgba(7,48,57,.35);backdrop-filter:blur(2px);box-shadow:0 16px 32px rgba(1,17,19,.28);border:1px solid rgba(255,228,173,.28)}
+.hero-overlay{background:linear-gradient(90deg,rgba(4,43,50,.80) 0%,rgba(9,81,87,.50) 45%,rgba(4,41,49,.65) 100%)!important}
+.hero:before{content:"";position:absolute;inset:auto 0 0 0;height:34%;background:linear-gradient(0deg,rgba(5,42,49,.45),transparent);z-index:1}
+@media(max-width:1100px){.hero{min-height:910px!important}.hero-krishna{width:min(31vw,300px);left:1%}.hero-bhagavathy{width:min(25vw,250px);right:2.5%}.hero-poornathreyeesan{width:min(17vw,150px);right:27%}.hero-content{max-width:760px!important}}
+@media(max-width:900px){.hero{min-height:980px!important}.hero-content{max-width:680px!important;padding-top:56px!important}.hero-krishna{left:50%;transform:translateX(-50%);width:240px;bottom:0;opacity:.58;max-height:48%}.hero-bhagavathy{right:18px;bottom:16px;width:180px;max-height:34%;padding:7px}.hero-poornathreyeesan{left:18px;right:auto;bottom:28px;width:130px;max-height:25%;padding:6px}}
+@media(max-width:560px){.hero{min-height:920px!important}.hero-content{padding-left:18px!important;padding-right:18px!important}.hero-krishna{width:220px;bottom:8px;opacity:.42}.hero-bhagavathy{width:145px;bottom:18px;right:8px}.hero-poornathreyeesan{width:108px;left:8px;bottom:26px}.countdown{width:min(100%,620px)!important}}
+
+
+/* Poster-style blended hero update */
+.hero{background:url("images/hero-poster-blend.png") center/cover no-repeat!important;min-height:840px!important}
+.hero-overlay{background:linear-gradient(90deg,rgba(34,15,13,.58),rgba(88,32,24,.18) 46%,rgba(31,13,12,.42) 100%)!important}
+.hero-deity-collage{display:none!important}.hero-deity{display:none!important}
+.hero-content{max-width:920px!important;position:relative;z-index:2!important;padding-top:54px!important}
+@media(max-width:900px){.hero{min-height:920px!important;background-position:62% center!important}.hero-content{max-width:700px!important}}
+@media(max-width:560px){.hero{min-height:860px!important;background-position:67% center!important}}
+
+
+/* Equal small deity hero update */
+.hero{background:url("images/hero-poster-blend.png") center/cover no-repeat!important;min-height:780px!important}
+.hero-overlay{background:linear-gradient(90deg,rgba(4,45,52,.34),rgba(8,76,82,.12) 50%,rgba(34,14,12,.25) 100%)!important}
+.hero-content{padding-top:40px!important;padding-bottom:300px!important}
+@media(max-width:900px){
+  .hero{min-height:860px!important;background-position:center!important}
+  .hero-content{padding-bottom:330px!important}
+}
+@media(max-width:560px){
+  .hero{min-height:820px!important;background-position:center!important}
+  .hero-content{padding-bottom:290px!important}
+}
+
+
+/* Seamless blended hero update */
+.hero{background:url("images/hero-poster-blend.png") center/cover no-repeat!important;min-height:790px!important}
+.hero-overlay{background:linear-gradient(90deg,rgba(5,30,35,.11),rgba(12,60,62,.03) 50%,rgba(22,10,10,.08) 100%)!important}
+.hero-content{padding-top:42px!important;padding-bottom:180px!important;max-width:920px!important}
+@media(max-width:900px){.hero{min-height:860px!important;background-position:center center!important}.hero-content{padding-bottom:210px!important;max-width:720px!important}}
+@media(max-width:560px){.hero{min-height:820px!important;background-position:60% center!important}.hero-content{padding-bottom:195px!important}}
+
+
+/* Guruvayoorappan hero update */
+.hero{background:url("images/hero-poster-blend.png") center/cover no-repeat!important;min-height:790px!important}
+.hero-overlay{background:linear-gradient(90deg,rgba(5,30,35,.12),rgba(12,60,62,.04) 50%,rgba(22,10,10,.10) 100%)!important}
+.hero-deity-collage,.hero-deity{display:none!important}
+.hero-content{padding-top:42px!important;padding-bottom:180px!important;max-width:920px!important}
+@media(max-width:900px){
+  .hero{min-height:860px!important;background-position:center!important}
+  .hero-content{padding-bottom:210px!important;max-width:720px!important}
+}
+@media(max-width:560px){
+  .hero{min-height:820px!important;background-position:center!important}
+  .hero-content{padding-bottom:195px!important}
+}
+
+
+/* Remove photo captions */
+.gallery-item span,
+.recent-grid span,
+#lightboxCaption {
+  display: none !important;
+}
+
+
+/* Gallery day tabs and empty placeholders */
+.filters {
+  gap: 10px !important;
+}
+.filters button {
+  white-space: nowrap;
+}
+.empty-gallery-message {
+  grid-column: 1 / -1;
+  min-height: 220px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, .68);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 32px;
+  color: var(--muted);
+}
+.empty-gallery-message b {
+  display: block;
+  font-size: 20px;
+  color: var(--maroon);
+  margin-bottom: 8px;
+}
+.empty-gallery-message span {
+  display: block;
+  font-size: 14px;
+}
+
+
+/* Fixed clickable gallery day tabs */
+.filters button {
+  cursor: pointer !important;
+}
+.empty-gallery-message {
+  grid-column: 1 / -1;
+  min-height: 220px;
+  border: 1px dashed var(--line);
+  border-radius: 14px;
+  background: rgba(255,255,255,.72);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 32px;
+}
+.empty-gallery-message b {
+  display: block;
+  color: var(--maroon);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.empty-gallery-message span {
+  display: block !important;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+
+/* Final gallery tab click fix */
+#galleryFilters {
+  position: relative !important;
+  z-index: 20 !important;
+  pointer-events: auto !important;
+}
+#galleryFilters button {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  user-select: none;
+}
+#galleryGrid {
+  position: relative !important;
+  z-index: 1 !important;
+}
+.empty-gallery-message span {
+  display: block !important;
+}
