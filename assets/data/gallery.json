@@ -2,13 +2,18 @@
   "photos": [
     {
       "tab": "general",
-      "image": "/assets/images/gallery-uploads/KRG-60.JPG",
-      "caption": "Welcome Office Inaugration"
+      "image": "/assets/images/gallery-uploads/KRG-72.JPG",
+      "caption": ""
     },
     {
       "tab": "general",
-      "image": "/assets/images/gallery-uploads/KRG-34.JPG",
+      "image": "/assets/images/gallery-uploads/KRG-80.JPG",
       "caption": "Sathram Office Inaugration"
+    },
+    {
+      "tab": "general",
+      "image": "/assets/images/gallery-uploads/KRG-60.JPG",
+      "caption": "Welcome Office Inaugration"
     }
   ]
 }
