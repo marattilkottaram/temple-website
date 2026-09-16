@@ -4,7 +4,7 @@ function setCountdown(){const d=Math.max(0,target-Date.now()),v=[Math.floor(d/86
 document.querySelector('.nav-toggle')?.addEventListener('click',()=>document.querySelector('nav').classList.toggle('open'));
 const festivalDays=Array.from({length:11},(_,i)=>17+i),special={17:['Nirmalyam & Temple Opening','Ganapathi Homam','Bhagavatha Parayanam','Inaugural Sreemad Bhagavatha Discourse','Annadanam','Evening Bhajans'],18:['Nirmalyam','Vishnu Sahasranama Parayanam','Sreemad Bhagavatha Discourse','Annadanam','Deeparadhana & Harivarasanam'],19:['Nirmalyam','Bhagavatha Parayanam','Devotional Music','Annadanam','Sreemad Bhagavatha Discourse'],20:['Nirmalyam','Ganapathi Homam','Bhagavatha Discourse','Annadanam','Cultural Programme'],21:['Nirmalyam','Vishnu Sahasranama','Sreemad Bhagavatha Discourse','Annadanam','Bhajans'],22:['Nirmalyam','Bhagavatha Parayanam','Devotional Discourse','Annadanam','Evening Prayer'],23:['Nirmalyam','Temple Rituals','Bhagavatha Discourse','Annadanam','Cultural Programme'],24:['Nirmalyam','Bhagavatha Parayanam','Satsang','Annadanam','Deeparadhana'],25:['Nirmalyam','Vishnu Sahasranama','Sreemad Bhagavatha Discourse','Annadanam','Bhajans'],26:['Nirmalyam','Bhagavatha Parayanam','Spiritual Talk','Annadanam','Cultural Evening'],27:['Nirmalyam','Concluding Parayanam','Mahasathram Valedictory','Annadanam','Deeparadhana']},timeSlots=['05:30 AM – 06:30 AM','06:30 AM – 07:30 AM','07:30 AM – 09:30 AM','10:00 AM – 12:30 PM','12:30 PM – 01:30 PM','06:00 PM – 07:00 PM'];let currentMonth=11,currentYear=2026,selected=17;
 function renderCalendar(){const c=document.getElementById('calendar');if(!c)return;document.getElementById('monthTitle').textContent=new Date(currentYear,currentMonth).toLocaleString('en-IN',{month:'long',year:'numeric'});c.innerHTML='';let first=new Date(currentYear,currentMonth,1).getDay(),last=new Date(currentYear,currentMonth+1,0).getDate();for(let i=0;i<first;i++)c.insertAdjacentHTML('beforeend','<button class="blank"></button>');for(let d=1;d<=last;d++){const fest=currentYear===2026&&currentMonth===11&&festivalDays.includes(d),b=document.createElement('button');b.textContent=d;b.className=(fest?'festival ':'')+(d===selected&&fest?'selected':'');if(fest)b.onclick=()=>{selected=d;renderCalendar();renderProgram()};c.append(b)}}
-function renderProgram(){const box=document.getElementById('programList');if(!box)return;document.getElementById('selectedDate').textContent=new Date(2026,11,selected).toLocaleDateString('en-IN',{day:'numeric',month:'long',year:'numeric',weekday:'long'});box.innerHTML=(special[selected]||[]).map((x,i)=>`<div class="timeline-row"><time>${timeSlots[i]||'07:00 PM – 08:00 PM'}</time><span>${x}</span></div>`).join('')}
+function renderProgram(){renderProgramFor(document.body.classList.contains('lang-ml')?'ml':'en')}
 document.getElementById('prevMonth')?.addEventListener('click',()=>{currentMonth--;if(currentMonth<0){currentMonth=11;currentYear--}renderCalendar()});document.getElementById('nextMonth')?.addEventListener('click',()=>{currentMonth++;if(currentMonth>11){currentMonth=0;currentYear++}renderCalendar()});renderCalendar();renderProgram();
 const gallery=[
 {src:'assets/images/gallery-refresh/general-1.jpg',category:'general',title:'General · Temple committee gathering'},
@@ -80,13 +80,46 @@ Object.assign(i18n.ml,{
 });
 const mlProgram={17:['നിർമാല്യം & ക്ഷേത്രതുറപ്പ്','ഗണപതി ഹോമം','ഭാഗവത പാരായണം','ഉദ്ഘാടന ശ്രീമദ് ഭാഗവത പ്രഭാഷണം','അന്നദാനം','സായാഹ്ന ഭജനകൾ'],18:['നിർമാല്യം','വിഷ്ണു സഹസ്രനാമ പാരായണം','ശ്രീമദ് ഭാഗവത പ്രഭാഷണം','അന്നദാനം','ദീപാരാധന & ഹരിവരാസനം'],19:['നിർമാല്യം','ഭാഗവത പാരായണം','ഭക്തിഗാനങ്ങൾ','അന്നദാനം','ശ്രീമദ് ഭാഗവത പ്രഭാഷണം'],20:['നിർമാല്യം','ഗണപതി ഹോമം','ഭാഗവത പ്രഭാഷണം','അന്നദാനം','സാംസ്കാരിക പരിപാടി'],21:['നിർമാല്യം','വിഷ്ണു സഹസ്രനാമം','ശ്രീമദ് ഭാഗവത പ്രഭാഷണം','അന്നദാനം','ഭജനകൾ'],22:['നിർമാല്യം','ഭാഗവത പാരായണം','ആത്മീയ പ്രഭാഷണം','അന്നദാനം','സായാഹ്ന പ്രാർത്ഥന'],23:['നിർമാല്യം','ക്ഷേത്രാചാരങ്ങൾ','ഭാഗവത പ്രഭാഷണം','അന്നദാനം','സാംസ്കാരിക പരിപാടി'],24:['നിർമാല്യം','ഭാഗവത പാരായണം','സത്സംഗം','അന്നദാനം','ദീപാരാധന'],25:['നിർമാല്യം','വിഷ്ണു സഹസ്രനാമം','ശ്രീമദ് ഭാഗവത പ്രഭാഷണം','അന്നദാനം','ഭജനകൾ'],26:['നിർമാല്യം','ഭാഗവത പാരായണം','ആത്മീയ സന്ദേശം','അന്നദാനം','സാംസ്കാരിക സായാഹ്നം'],27:['നിർമാല്യം','സമാപന പാരായണം','മഹാസത്ര സമാപന സമ്മേളനം','അന്നദാനം','ദീപാരാധന']};
 const mlTimes=['05:30 – 06:30','06:30 – 07:30','07:30 – 09:30','10:00 – 12:30','12:30 – 01:30','06:00 – 07:00'];
+/* Programme schedule — data-driven (CMS-managed via assets/data/schedule.json),
+   falls back to the built-in timetable if the file is unavailable. Uses var so
+   it is safe to reference during the initial render before this line executes. */
+var scheduleByDay = null;
+function scheduleRows(day, lang){
+  if (scheduleByDay && scheduleByDay[day]) {
+    return scheduleByDay[day].map(function(r){ return {
+      time: lang==='ml' ? (r.time_ml || r.time) : r.time,
+      event: lang==='ml' ? (r.event_ml || r.event_en) : r.event_en
+    }; });
+  }
+  var src = (lang==='ml' ? mlProgram[day] : special[day]) || [];
+  var times = lang==='ml' ? mlTimes : timeSlots;
+  return src.map(function(ev,i){ return { time: times[i] || (lang==='ml' ? '07:00 – 08:00' : '07:00 PM – 08:00 PM'), event: ev }; });
+}
+function renderProgramFor(lang){
+  var box=document.getElementById('programList'); if(!box) return;
+  var dateEl=document.getElementById('selectedDate');
+  if(dateEl){ var d=new Date(2026,11,selected); dateEl.textContent=d.toLocaleDateString(lang==='ml'?'ml-IN':'en-IN',{day:'numeric',month:'long',year:'numeric',weekday:'long'}); }
+  box.innerHTML = scheduleRows(selected, lang).map(function(r){ return '<div class="timeline-row"><time>'+r.time+'</time><span>'+r.event+'</span></div>'; }).join('');
+}
 function refreshDynamicLanguage(lang){
- if(document.getElementById('calendar')){const t=document.getElementById('monthTitle');if(t)t.textContent=lang==='ml'?'ഡിസംബർ 2026':'December 2026'; const box=document.getElementById('programList');if(box){const d=new Date(2026,11,selected);const locale=lang==='ml'?'ml-IN':'en-IN';document.getElementById('selectedDate').textContent=d.toLocaleDateString(locale,{day:'numeric',month:'long',year:'numeric',weekday:'long'});const rows=(lang==='ml'?mlProgram[selected]:special[selected])||[];box.innerHTML=rows.map((x,i)=>`<div class="timeline-row"><time>${(lang==='ml'?mlTimes:timeSlots)[i]||'07:00 – 08:00'}</time><span>${x}</span></div>`).join('')}}
+ if(document.getElementById('calendar')){const t=document.getElementById('monthTitle');if(t)t.textContent=lang==='ml'?'ഡിസംബർ 2026':'December 2026'; renderProgramFor(lang);}
  if(document.getElementById('galleryGrid')){const galleryTitlesML={general:['പൊതുവായത് · ക്ഷേത്ര കമ്മിറ്റി സംഗമം','പൊതുവായത് · ക്ഷേത്ര സമൂഹ പരിപാടി','പൊതുവായത് · ഭക്തിസംഗമം'],11:'ദിവസം 11 · സമാപനവും മഹാദീപാരാധനയും',10:'ദിവസം 10 · ഭക്തിപ്രഭാഷണം',9:'ദിവസം 9 · സായാഹ്ന പൂജ',8:'ദിവസം 8 · ക്ഷേത്രസംഗമം',7:'ദിവസം 7 · ഭാഗവത പ്രഭാഷണം',6:'ദിവസം 6 · പ്രാർത്ഥനയും ഭക്തിയും',5:'ദിവസം 5 · ഉത്സവാന്തരീക്ഷം',4:'ദിവസം 4 · ഭജനകളും സംഗീതവും',3:'ദിവസം 3 · ആത്മീയ ചിന്തനം',2:'ദിവസം 2 · ഭാഗവത പാരായണം',1:'ദിവസം 1 · മഹാസത്ര ഉദ്ഘാടനം'}; gallery.forEach((g,i)=>{g.title=lang==='ml'?(g.category==='general'?galleryTitlesML.general[i]:galleryTitlesML[g.day]):g.titleEn||g.title; if(!g.titleEn)g.titleEn=g.title}); const active=document.querySelector('#galleryFilters .active'); if(active)drawGallery(active.dataset.filter||'all');}
 }
 const oldApplyLanguage=applyLanguage;
 applyLanguage=function(lang){oldApplyLanguage(lang);refreshDynamicLanguage(lang)};
 applyLanguage(localStorage.getItem('templeLang')||'en');
+
+/* Load the CMS-managed programme schedule and refresh the timetable when ready. */
+if (document.getElementById('calendar')) {
+  fetch('assets/data/schedule.json', { cache: 'no-store' })
+    .then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+    .then(function(data){
+      scheduleByDay = {};
+      (data.days || []).forEach(function(d){ scheduleByDay[d.day] = d.rows || []; });
+      renderProgramFor(document.body.classList.contains('lang-ml') ? 'ml' : 'en');
+    })
+    .catch(function(){ /* keep the built-in timetable as fallback */ });
+}
 
 
 const galleryData = [
