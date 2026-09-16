@@ -1,0 +1,406 @@
+{
+  "days": [
+    {
+      "day": 17,
+      "date": "2026-12-17",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam & Temple Opening",
+          "event_ml": "നിർമാല്യം & ക്ഷേത്രതുറപ്പ്"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Ganapathi Homam",
+          "event_ml": "ഗണപതി ഹോമം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Bhagavatha Parayanam",
+          "event_ml": "ഭാഗവത പാരായണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Inaugural Sreemad Bhagavatha Discourse",
+          "event_ml": "ഉദ്ഘാടന ശ്രീമദ് ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "06:00 PM – 07:00 PM",
+          "time_ml": "06:00 – 07:00",
+          "event_en": "Evening Bhajans",
+          "event_ml": "സായാഹ്ന ഭജനകൾ"
+        }
+      ]
+    },
+    {
+      "day": 18,
+      "date": "2026-12-18",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Vishnu Sahasranama Parayanam",
+          "event_ml": "വിഷ്ണു സഹസ്രനാമ പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Sreemad Bhagavatha Discourse",
+          "event_ml": "ശ്രീമദ് ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Deeparadhana & Harivarasanam",
+          "event_ml": "ദീപാരാധന & ഹരിവരാസനം"
+        }
+      ]
+    },
+    {
+      "day": 19,
+      "date": "2026-12-19",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Bhagavatha Parayanam",
+          "event_ml": "ഭാഗവത പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Devotional Music",
+          "event_ml": "ഭക്തിഗാനങ്ങൾ"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Sreemad Bhagavatha Discourse",
+          "event_ml": "ശ്രീമദ് ഭാഗവത പ്രഭാഷണം"
+        }
+      ]
+    },
+    {
+      "day": 20,
+      "date": "2026-12-20",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Ganapathi Homam",
+          "event_ml": "ഗണപതി ഹോമം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Bhagavatha Discourse",
+          "event_ml": "ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Cultural Programme",
+          "event_ml": "സാംസ്കാരിക പരിപാടി"
+        }
+      ]
+    },
+    {
+      "day": 21,
+      "date": "2026-12-21",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Vishnu Sahasranama",
+          "event_ml": "വിഷ്ണു സഹസ്രനാമം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Sreemad Bhagavatha Discourse",
+          "event_ml": "ശ്രീമദ് ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Bhajans",
+          "event_ml": "ഭജനകൾ"
+        }
+      ]
+    },
+    {
+      "day": 22,
+      "date": "2026-12-22",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Bhagavatha Parayanam",
+          "event_ml": "ഭാഗവത പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Devotional Discourse",
+          "event_ml": "ആത്മീയ പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Evening Prayer",
+          "event_ml": "സായാഹ്ന പ്രാർത്ഥന"
+        }
+      ]
+    },
+    {
+      "day": 23,
+      "date": "2026-12-23",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Temple Rituals",
+          "event_ml": "ക്ഷേത്രാചാരങ്ങൾ"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Bhagavatha Discourse",
+          "event_ml": "ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Cultural Programme",
+          "event_ml": "സാംസ്കാരിക പരിപാടി"
+        }
+      ]
+    },
+    {
+      "day": 24,
+      "date": "2026-12-24",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Bhagavatha Parayanam",
+          "event_ml": "ഭാഗവത പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Satsang",
+          "event_ml": "സത്സംഗം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Deeparadhana",
+          "event_ml": "ദീപാരാധന"
+        }
+      ]
+    },
+    {
+      "day": 25,
+      "date": "2026-12-25",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Vishnu Sahasranama",
+          "event_ml": "വിഷ്ണു സഹസ്രനാമം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Sreemad Bhagavatha Discourse",
+          "event_ml": "ശ്രീമദ് ഭാഗവത പ്രഭാഷണം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Bhajans",
+          "event_ml": "ഭജനകൾ"
+        }
+      ]
+    },
+    {
+      "day": 26,
+      "date": "2026-12-26",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Bhagavatha Parayanam",
+          "event_ml": "ഭാഗവത പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Spiritual Talk",
+          "event_ml": "ആത്മീയ സന്ദേശം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Cultural Evening",
+          "event_ml": "സാംസ്കാരിക സായാഹ്നം"
+        }
+      ]
+    },
+    {
+      "day": 27,
+      "date": "2026-12-27",
+      "rows": [
+        {
+          "time": "05:30 AM – 06:30 AM",
+          "time_ml": "05:30 – 06:30",
+          "event_en": "Nirmalyam",
+          "event_ml": "നിർമാല്യം"
+        },
+        {
+          "time": "06:30 AM – 07:30 AM",
+          "time_ml": "06:30 – 07:30",
+          "event_en": "Concluding Parayanam",
+          "event_ml": "സമാപന പാരായണം"
+        },
+        {
+          "time": "07:30 AM – 09:30 AM",
+          "time_ml": "07:30 – 09:30",
+          "event_en": "Mahasathram Valedictory",
+          "event_ml": "മഹാസത്ര സമാപന സമ്മേളനം"
+        },
+        {
+          "time": "10:00 AM – 12:30 PM",
+          "time_ml": "10:00 – 12:30",
+          "event_en": "Annadanam",
+          "event_ml": "അന്നദാനം"
+        },
+        {
+          "time": "12:30 PM – 01:30 PM",
+          "time_ml": "12:30 – 01:30",
+          "event_en": "Deeparadhana",
+          "event_ml": "ദീപാരാധന"
+        }
+      ]
+    }
+  ]
+}
