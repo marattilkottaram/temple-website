@@ -1,12 +1,15 @@
 <!doctype html>
-   <html lang="en">
-   <head>
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Temple Photo Manager</title>
-     <link href="/config.yml" type="text/yaml" rel="cms-config-url" />
-   </head>
-   <body>
-     <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
-   </body>
-   </html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Temple Photo Manager</title>
+  <!-- Load the correct config file (admin/config.yml), NOT the stale one at the site root. -->
+  <link href="/admin/config.yml" type="text/yaml" rel="cms-config-url" />
+</head>
+<body>
+  <!-- Sveltia CMS: modern, free, open-source photo/content manager.
+       Loads the visual editor. Config lives in admin/config.yml. -->
+  <script src="https://unpkg.com/@sveltia/cms/dist/sveltia-cms.js"></script>
+</body>
+</html>
