@@ -1,0 +1,107 @@
+# ============================================================
+#  Temple website — photo manager settings (Sveltia CMS)
+# ============================================================
+#
+#  BEFORE THIS WORKS, change the line below marked  <-- EDIT
+#  to your GitHub repository, e.g.  repo: arjun/sathram-temple
+#
+backend:
+  name: github
+  repo: marattilkottaram/temple-website
+  branch: main
+
+# Where uploaded photos are stored inside the website
+media_folder: "assets/images/gallery-uploads"
+public_folder: "assets/images/gallery-uploads"
+
+# A small helpful message on the login screen
+site_url: /
+display_url: /
+logo_url: /assets/images/header-bhagavathy.png
+
+# --- Reliable photo uploads -------------------------------------------------
+# Shrink & compress every uploaded photo IN THE BROWSER before it is saved to
+# GitHub. Large phone photos (5-15 MB) are what caused uploads to fail
+# ("failed to fetch") after a couple of images. Converting to WebP at max
+# 1800px makes each photo ~200-400 KB, so uploads are fast and reliable and
+# deletes save correctly.
+media_libraries:
+  default:
+    config:
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+          width: 1800
+          height: 1800
+      max_file_size: 26214400
+      slugify_filename: true
+
+collections:
+  - name: gallery
+    label: "Photo Gallery"
+    description: "Add or remove photos shown on the website Gallery page."
+    files:
+      - name: photos
+        label: "Gallery Photos"
+        file: "assets/data/gallery.json"
+        description: "Each photo has a Section (General or Day 1–11), the image, and an optional caption."
+        fields:
+          - name: photos
+            label: "Photos"
+            label_singular: "Photo"
+            widget: list
+            summary: "{{fields.tab}} — {{fields.caption}}"
+            fields:
+              - name: tab
+                label: "Section"
+                widget: select
+                default: "general"
+                options:
+                  - { label: "General", value: "general" }
+                  - { label: "Day 1", value: "day-1" }
+                  - { label: "Day 2", value: "day-2" }
+                  - { label: "Day 3", value: "day-3" }
+                  - { label: "Day 4", value: "day-4" }
+                  - { label: "Day 5", value: "day-5" }
+                  - { label: "Day 6", value: "day-6" }
+                  - { label: "Day 7", value: "day-7" }
+                  - { label: "Day 8", value: "day-8" }
+                  - { label: "Day 9", value: "day-9" }
+                  - { label: "Day 10", value: "day-10" }
+                  - { label: "Day 11", value: "day-11" }
+              - name: image
+                label: "Photo"
+                widget: image
+              - name: caption
+                label: "Caption (optional)"
+                widget: string
+                required: false
+
+  - name: schedule
+    label: "Programme Schedule"
+    description: "Edit the daily programme shown on the Programme page (English + Malayalam)."
+    files:
+      - name: days
+        label: "Daily Programme"
+        file: "assets/data/schedule.json"
+        description: "Each day (17–27 Dec) has a list of programme items with a time and the event name in English and Malayalam."
+        fields:
+          - name: days
+            label: "Days"
+            label_singular: "Day"
+            widget: list
+            summary: "Day {{fields.day}} — {{fields.date}}"
+            fields:
+              - { name: day, label: "Festival Day Number (17–27)", widget: number, value_type: int }
+              - { name: date, label: "Date (YYYY-MM-DD)", widget: string }
+              - name: rows
+                label: "Programme Items"
+                label_singular: "Item"
+                widget: list
+                summary: "{{fields.time}} — {{fields.event_en}}"
+                fields:
+                  - { name: time, label: "Time (English)", widget: string }
+                  - { name: time_ml, label: "Time (Malayalam)", widget: string, required: false }
+                  - { name: event_en, label: "Programme (English)", widget: string }
+                  - { name: event_ml, label: "Programme (Malayalam)", widget: string, required: false }
