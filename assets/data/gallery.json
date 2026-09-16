@@ -2,8 +2,13 @@
   "photos": [
     {
       "tab": "general",
-      "image": "/assets/images/gallery-uploads/KRG-60.JPG",
+      "image": "/assets/images/gallery-uploads/krg-68.webp",
       "caption": "office inaugration"
+    },
+    {
+      "tab": "general",
+      "image": "/assets/images/gallery-uploads/krg-68.webp",
+      "caption": ""
     }
   ]
 }
