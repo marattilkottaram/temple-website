@@ -15,9 +15,9 @@ media_folder: "assets/images/gallery-uploads"
 public_folder: "assets/images/gallery-uploads"
 
 # A small helpful message on the login screen
-site_url: /
-display_url: /
-logo_url: /assets/images/header-bhagavathy.png
+site_url: https://43abbsmdu.com
+display_url: https://43abbsmdu.com
+logo_url: https://43abbsmdu.com/assets/images/header-bhagavathy.png
 
 # --- Reliable photo uploads -------------------------------------------------
 # Shrink & compress every uploaded photo IN THE BROWSER before it is saved to
